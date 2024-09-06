@@ -64,7 +64,7 @@
 <?php if (empty($competitors)) {
     echo "No momento não temos nenhum esporte";
 } else {
-    echo "<ul>";
+   
     foreach ($competitors as $competitor) {
         echo "<ul class='ullista'>";
         echo "<li class='lilista'>";
@@ -96,7 +96,7 @@
 ?>
   <br>
         <div class="botaovoltar">
-    <a class="voltar" href="#">voltar</a> 
+    <a class="voltar" href="createCompetitor.php">voltar</a> 
        </div>   
  
 
