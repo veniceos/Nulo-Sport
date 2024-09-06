@@ -62,7 +62,7 @@
     <h1 class="title">LISTAR TREINADOR</h1>
 
 <?php if (empty($trainers)) {
-    echo "No momento não temos nenhum esporte";
+    echo "No momento não temos nenhum treinador";
 } else {
     
     foreach ($trainers as $trainer) {

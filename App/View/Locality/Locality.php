@@ -66,7 +66,7 @@
     <h1 class="title">LISTAR LOCALIDADE</h1>
 
 <?php if (empty($localitys)) {
-    echo "No momento não temos nenhum esporte";
+    echo "No momento não temos nenhuma localidade";
 } else {
 
     foreach ($localitys as $locality) {
