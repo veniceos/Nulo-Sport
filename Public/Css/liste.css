@@ -1,0 +1,89 @@
+.ullista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; /* Centraliza a lista */
+    width: 100%;
+    max-width: 600px;
+}
+
+.lilista {
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 40px;
+    background-color: #3992DF;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 200px; /* Define uma altura mínima para as caixas */
+}
+
+.text-content {
+    color: white;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 5px;
+    margin-top: -100px;
+}
+
+/* Estilo para os links de editar e excluir */
+.ee {
+    text-align: center;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3992DF;
+    background-color: #ABFB0B;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ee:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o botão de voltar */
+.botaovoltar {
+    text-align: center;
+    margin-top: auto; /* Empurra o botão para o final da caixa */
+    width: 100%;
+}
+
+.voltar {
+    margin-top: -30px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ABFB0B;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.voltar:hover {
+    background-color: #83c500;
+}
+
+.title {
+    color: #3992DF;
+    margin-top: -190px;
+}
+
+.linha {
+    align-self: center;
+    width: 112%; /* Define a largura da linha */
+    height: 2px; /* Define a altura da linha */
+    background-color: #83c500; /* Cor da linha */
+    margin: 40px 0; /* Espaçamento acima e abaixo da linha */
+}
+

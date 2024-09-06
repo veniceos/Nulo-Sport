@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    flex-direction: column; 
+}
+
+.container-cadastro {
+    background-color: #3992DF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%; 
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0062cc;
+    padding: 10px 20px;
+    color: white;
+    box-sizing: border-box; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+.menu-icon, .user-icon {
+    font-size: 24px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner h1 {
+    color: #0062cc;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.banner p {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #0062cc;
+    padding: 15px 20px;
+    width: 80%;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.buttons a:hover {
+    background-color: #0056b3;
+}
+
+.title {
+    color: #0062cc;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form {
+    margin-left: -13px;
+
+}
+
+.cadastrar {
+    background-color: #ABFB0B; /* Cor de fundo azul */
+    border: none; /* Remove a borda padrão */
+    color: #0062cc; /* Cor do texto */
+    padding: 10px 27px; /* Espaçamento interno (vertical e horizontal) */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    display: inline-block; /* Exibe o botão em linha */
+    font-size: 14px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margens ao redor do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animação suave para as transições */
+}
+
+
+  /* Estilização do botão ao clicar (active) */
+  .cadastrar:active {
+    background-color: #659800; /* Cor de fundo ainda mais escura */
+    color: aliceblue;
+  }
+
+  .listar {
+    margin-left: 35px;
+    font-style: italic;
+    color: white;
+  }
+
+  .listar:active {
+    color:#0062cc;
+    transition: 50ms;
+  }
