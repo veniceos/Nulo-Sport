@@ -29,16 +29,50 @@
 <head>
     <meta charset="UTF-8">
     <meta street="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View teste</title>
+
+    <title>Inclusão no Esporte</title> 
+    <link rel="stylesheet" href="../../../Public/Css/liste.css">
+    <link rel="stylesheet" href="../../../Public/Css/header2.css">
+   
+    
 </head>
 <body>
+
+<div class="header">
+    <script src="../../../Public/Assets/js/script.js"></script>
+    <div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul class="ulheader">
+      <li class="liheader"><a class="op" href="../../../App/View/Sport/createSport.php">Esporte</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Competitor/createCompetitor.php">Competidor</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Trainer/createTrainer.php">Treinador</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Locality/createLocality.php">Localidade</a></li>
+    </ul>
+  </nav> 
+</div>
+<div class="menu-bg" id="menu-bg"></div>
+<div class="logo">
+        <img src="../../../Public/Assets/img/logo.jpeg" alt="Logo">
+    </div>
+<div class="icon">
+    <img src="../../../Public/Assets/img/Icon.png">
+</div>
+    </div>
+    <h1 class="title">LISTAR LOCALIDADE</h1>
 
 <?php if (empty($localitys)) {
     echo "No momento não temos nenhum esporte";
 } else {
-    echo "<ul>";
+
     foreach ($localitys as $locality) {
-        echo "<li>";
+        echo "<ul class='ullista'>";
+        echo "<li class='lilista'>";
+        echo "<div class='text-content'>";
         echo "Nome: " . $locality['street'] . "<br>";
         echo "Idade: " . $locality['neighborhood'] . "<br>";
         echo "Altura: " . $locality['number'] . "<br>";
@@ -46,17 +80,26 @@
         echo "city: " . $locality['city'] . "<br>";
         echo "state: " . $locality['state'] . "<br>";
         echo "Equipe: " . $locality['country'] . "<br>";
-
-        echo '<a href="updateLocality.php?id=' . $locality['id'] . '">editar</a>';
-        echo ' ou ';
-        echo '<a href="deleteLocality.php?id=' . $locality['id'] . '">excluir</a>';
+        echo '<div class="linha">';
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<div class='actions'>";
+        echo '<a class="ee" href="updateLocality.php?id=' . $locality['id'] . '">editar</a>';
+        echo '<a class="ee" href="deleteLocality.php?id=' . $locality['id'] . '">excluir</a>';
         
-        echo "</li>";
-    }
-    echo "</ul>";
+        echo "  </li>";echo "</div>";echo "</div>"; echo "</div>";
+        echo "</ul>";  }
+    
 }
 ?>
+ <br>
+        <div class="botaovoltar">
+    <a class="voltar" href="createLocality.php">voltar</a> 
+       </div>  
 
-<a href="createLocality.php">Criar Localidade</a>
 </body>
 </html>
