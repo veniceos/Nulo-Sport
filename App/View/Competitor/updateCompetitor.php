@@ -48,7 +48,7 @@
     <img src="../../../Public/Assets/img/Icon.png">
 </div>
     </div>
-    <h1 class="title">COMPETIDOR</h1>
+    <h1 class="title">EDITAR COMPETIDOR</h1>
 
 <div class="container-cadastro">
 <form action="#" method="POST">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Set-2024 às 17:58
+-- Tempo de geração: 06-Set-2024 às 20:47
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -38,6 +38,14 @@ CREATE TABLE `competitor` (
   `team` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Extraindo dados da tabela `competitor`
+--
+
+INSERT INTO `competitor` (`id`, `name`, `age`, `height`, `gender`, `CPF`, `RG`, `team`) VALUES
+(11, 'Maria', 'wsssss', 'gggggggggggggggg', 'hhh', 'sssssssss', 'ssssssss', 'jhdchdxhfxj'),
+(12, 'Ana', 'wsssss', 'ggggggg', 'hhh', '0987654323456', 'ssssssss', 'sssssssssss');
+
 -- --------------------------------------------------------
 
 --
@@ -64,7 +72,7 @@ CREATE TABLE `locality` (
 CREATE TABLE `sport` (
   `id` int(11) NOT NULL,
   `modality` varchar(255) NOT NULL,
-  `olympic_year.` varchar(255) NOT NULL
+  `olympic_year` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -119,7 +127,7 @@ ALTER TABLE `trainer`
 -- AUTO_INCREMENT de tabela `competitor`
 --
 ALTER TABLE `competitor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `locality`
