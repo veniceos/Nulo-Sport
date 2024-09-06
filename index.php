@@ -17,10 +17,10 @@
   </div>
   <nav class="nav" id="nav">
     <ul class="ulheader">
-      <li class="liheader"><a class="op" href="App/View/Sport/Sport.php">Esporte</a></li>
-      <li class="liheader"><a class="op" href="App/View/Competitor/Competitor.php">Competidor</a></li>
-      <li class="liheader"><a class="op" href="App/View/Trainer/Trainer.php">Treinador</a></li>
-      <li class="liheader"><a class="op" href="App/View/Locality/Locality.php">Localidade</a></li>
+      <li class="liheader"><a class="op" href="App/View/Sport/createSport.php">Esporte</a></li>
+      <li class="liheader"><a class="op" href="App/View/Competitor/createCompetitor.php">Competidor</a></li>
+      <li class="liheader"><a class="op" href="App/View/Trainer/createTrainer.php">Treinador</a></li>
+      <li class="liheader"><a class="op" href="App/View/Locality/createLocality.php">Localidade</a></li>
     </ul>
   </nav> 
 </div>
@@ -40,10 +40,10 @@
     </div>
 
     <div class="buttons">
-        <a href="App/View/Sport/Sport.php">ESPORTE</a>
-        <a href="App/View/Competitor/Competitor.php">COMPETIDOR</a>
-        <a href="App/View/Trainer/Trainer.php">TREINADOR</a>
-        <a href="App/View/Locality/Locality.php">LOCALIDADE</a>
+        <a href="App/View/Sport/createSport.php">ESPORTE</a>
+        <a href="App/View/Competitor/createCompetitor.php">COMPETIDOR</a>
+        <a href="App/View/Trainer/createTrainer.php">TREINADOR</a>
+        <a href="App/View/Locality/createLocality.php">LOCALIDADE</a>
     </div>
 </body>
 </html>
