@@ -62,7 +62,7 @@
     <h1 class="title">LISTAR COMPETIDOR</h1>
 
 <?php if (empty($competitors)) {
-    echo "No momento não temos nenhum esporte";
+    echo "No momento não temos nenhum competidor";
 } else {
    
     foreach ($competitors as $competitor) {

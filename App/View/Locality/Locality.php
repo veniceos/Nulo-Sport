@@ -66,20 +66,20 @@
     <h1 class="title">LISTAR LOCALIDADE</h1>
 
 <?php if (empty($localitys)) {
-    echo "No momento não temos nenhum esporte";
+    echo "No momento não temos nenhuma localidade";
 } else {
 
     foreach ($localitys as $locality) {
         echo "<ul class='ullista'>";
         echo "<li class='lilista'>";
         echo "<div class='text-content'>";
-        echo "Nome: " . $locality['street'] . "<br>";
-        echo "Idade: " . $locality['neighborhood'] . "<br>";
-        echo "Altura: " . $locality['number'] . "<br>";
-        echo "Sexo: " . $locality['CEP'] . "<br>";
-        echo "city: " . $locality['city'] . "<br>";
-        echo "state: " . $locality['state'] . "<br>";
-        echo "Equipe: " . $locality['country'] . "<br>";
+        echo "Rua: " . $locality['street'] . "<br>";
+        echo "Bairro: " . $locality['neighborhood'] . "<br>";
+        echo "Número: " . $locality['number'] . "<br>";
+        echo "CEP: " . $locality['CEP'] . "<br>";
+        echo "Cidade: " . $locality['city'] . "<br>";
+        echo "Estado: " . $locality['state'] . "<br>";
+        echo "País: " . $locality['country'] . "<br>";
         echo '<div class="linha">';
         echo "<br>";
         echo "<br>";
