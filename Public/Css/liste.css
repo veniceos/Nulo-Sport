@@ -1,4 +1,10 @@
+body{
+    padding: 90px;
+}
+
+
 .ullista {
+
     list-style-type: none;
     padding: 0;
     margin: 0 auto; /* Centraliza a lista */
@@ -9,24 +15,28 @@
 .lilista {
     border-radius: 8px;
     padding: 16px;
-    margin: 8px 40px;
+    margin: auto;
     background-color: #3992DF;
     display: flex;
     flex-direction: column; /* Organiza os elementos em uma coluna */
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 200px; /* Define uma altura mínima para as caixas */
+   
+}
+
+.title {
+    color: #3992DF;
+    font-size: 22PX;
+    padding: 20px;
 }
 
 .text-content {
     color: white;
-    width: 100%;
-    margin-bottom: 8px;
+    
 }
 
 .actions {
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
     width: 100%;
     gap: 5px;
@@ -76,14 +86,8 @@
 
 .title {
     color: #3992DF;
-    margin-top: -190px;
+
 }
 
-.linha {
-    align-self: center;
-    width: 112%; /* Define a largura da linha */
-    height: 2px; /* Define a altura da linha */
-    background-color: #83c500; /* Cor da linha */
-    margin: 40px 0; /* Espaçamento acima e abaixo da linha */
-}
+
 

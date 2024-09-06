@@ -29,17 +29,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Public/Css/liste.css">
+    <link rel="stylesheet" href="../../../Public/Css/liste.css">
+    <link rel="stylesheet" href="../../../Public/Css/header2.css">
     <title>View teste</title>
 </head>
 <body>
+<div class="header">
+    <script src="../../../Public/Assets/js/script.js"></script>
+    <div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul class="ulheader">
+      <li class="liheader"><a class="op" href="../../../App/View/Sport/createSport.php">Esporte</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Competitor/createCompetitor.php">Competidor</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Trainer/createTrainer.php">Treinador</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Locality/createLocality.php">Localidade</a></li>
+    </ul>
+  </nav> 
+</div>
+<div class="menu-bg" id="menu-bg"></div>
+<div class="logo">
+        <img src="../../../Public/Assets/img/logo.jpeg" alt="Logo">
+    </div>
+<div class="icon">
+    <img src="../../../Public/Assets/img/Icon.png">
+</div>
+    </div>
+    <h1 class="title">LISTAR COMPETIDOR</h1>
 
 <?php if (empty($competitors)) {
     echo "No momento não temos nenhum esporte";
 } else {
     echo "<ul>";
     foreach ($competitors as $competitor) {
-        echo "<li>";
+        echo "<ul class='ullista'>";
+        echo "<li class='lilista'>";
+        echo "<div class='text-content'>";
         echo "Nome: " . $competitor['name'] . "<br>";
         echo "Idade: " . $competitor['age'] . "<br>";
         echo "Altura: " . $competitor['height'] . "<br>";
@@ -47,17 +76,29 @@
         echo "CPF: " . $competitor['CPF'] . "<br>";
         echo "RG: " . $competitor['RG'] . "<br>";
         echo "Equipe: " . $competitor['team'] . "<br>";
-
-        echo '<a href="updateCompetitor.php?id=' . $competitor['id'] . '">editar</a>';
-        echo ' ou ';
-        echo '<a href="deleteCompetitor.php?id=' . $competitor['id'] . '">excluir</a>';
+         echo '<div class="linha">';
+         echo "<br>";
+ echo "<br>";
+ echo "<br>";
+ echo "<br>";
+ echo "<br>";
+ echo "<br>";
+        echo "<div class='actions'>";
+        echo '<a class="ee" href="updateCompetitor.php?id=' . $competitor['id'] . '">editar</a>';
+        echo '<a class="ee" href="deleteCompetitor.php?id=' . $competitor['id'] . '">excluir</a>';
         
-        echo "</li>";
-    }
-    echo "</ul>";
+       
+        
+        echo "  </li>";echo "</div>";echo "</div>"; echo "</div>"; 
+  
+    echo "</ul>";  }
 }
 ?>
+  <br>
+        <div class="botaovoltar">
+    <a class="voltar" href="#">voltar</a> 
+       </div>   
+ 
 
-<a href="createCompetitor.php">Criar Competidor</a>
 </body>
 </html>
