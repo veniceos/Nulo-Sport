@@ -23,20 +23,6 @@ body {
 }
 
 
-.header {
-    width: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0062cc;
-    padding: 10px 20px;
-    color: white;
-    box-sizing: border-box; 
-    position: fixed; 
-    top: 0; 
-    z-index: 1000; 
-}
-
 .menu-icon, .user-icon {
     font-size: 24px;
 }
@@ -45,9 +31,6 @@ body {
     text-align: center;
 }
 
-.logo img {
-    width: 100px;
-}
 
 .banner {
     text-align: center;
