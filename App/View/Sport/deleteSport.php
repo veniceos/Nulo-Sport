@@ -26,7 +26,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete Esporte</title>
-    <link rel="stylesheet" href="Public/Css/delete.css">
+    <link rel="stylesheet" href="../../../Public/Css/delete.css">
+    <link rel="stylesheet" href="../../../Public/Css/header.css">
 </head>
 <body>
     <p>Tem certeza que deseja excluir o item?</p>
