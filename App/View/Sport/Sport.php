@@ -25,7 +25,7 @@
     <meta charset="UTF-8">
     <meta modality="viewport" content="width=device-width, initial-scale=1.0">
     <title>View teste</title>
-    <link rel="stylesheet" href="../../../Public/Css/header.css">
+    <link rel="stylesheet" href="../../../Public/Css/header2.css">
     <link rel="stylesheet" href="../../../Public/Css/liste.css">
 </head>
 <body>
@@ -39,10 +39,10 @@
   </div>
   <nav class="nav" id="nav">
     <ul class="ulheader">
-      <li class="liheader"><a class="op" href="../../../">Esporte</a></li>
-      <li class="liheader"><a class="op" href="../../../">Competidor</a></li>
-      <li class="liheader"><a class="op" href="../../../">Treinador</a></li>
-      <li class="liheader"><a class="op" href="../../../">Localidade</a></li>
+    <li class="liheader"><a class="op" href="../../../App/View/Sport/createSport.php">Esporte</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Competitor/createCompetitor.php">Competidor</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Trainer/createTrainer.php">Treinador</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Locality/createLocality.php">Localidade</a></li>
     </ul>
   </nav> 
 </div>
@@ -62,32 +62,34 @@
 if (empty($sports)) {
     echo "No momento não temos nenhum esporte";
 } else {
-    echo "<ul class='ullista'>";
     foreach ($sports as $sport) {
-
+        echo "<ul class='ullista'>";
         echo "<li class='lilista'>";
         echo "<div class='text-content'>";
         echo "Modalidade: " . $sport['modality'] . "<br>";
         echo "Ano Olímpico: " . $sport['olympic_year'] . "<br>";
-        echo "</div>";
-
+        echo '<div class="linha">';
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
         echo "<div class='actions'>";
         echo '<a class="ee" href="updateSport.php?id=' . $sport['id'] . '">editar</a>';
-        echo ' ou ';
         echo '<a class="ee" href="deleteSport.php?id=' . $sport['id'] . '">excluir</a>';
         echo "</div>";
         echo '<div class="linha">';
         echo "</div>";
-
-        echo "<div class='botaovoltar'>";
-        echo '<a class="voltar" href="#' .  '">voltar</a>';  
-        echo "</div>"; 
-        echo "</li>";
+        echo "  </li>";echo "</div>";echo "</div>"; echo "</div>"; 
+        echo "</ul>";  }
     }
-    echo "</ul>";
-}
 ?>
+<br>
+        <div class="botaovoltar">
+    <a class="voltar" href="createCompetitor.php">voltar</a> 
+       </div>   
+ 
 
-<a href="createSport.php">Criar Esporte</a>
 </body>
 </html>

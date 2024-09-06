@@ -34,10 +34,10 @@
   </div>
   <nav class="nav" id="nav">
     <ul class="ulheader">
-      <li class="liheader"><a class="op" href="../../../">Esporte</a></li>
-      <li class="liheader"><a class="op" href="../../../">Competidor</a></li>
-      <li class="liheader"><a class="op" href="../../../">Treinador</a></li>
-      <li class="liheader"><a class="op" href="../../../">Localidade</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Sport/createSport.php">Esporte</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Competitor/createCompetitor.php">Competidor</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Trainer/createTrainer.php">Treinador</a></li>
+      <li class="liheader"><a class="op" href="../../../App/View/Locality/createLocality.php">Localidade</a></li>
     </ul>
   </nav> 
 </div>
