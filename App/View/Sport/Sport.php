@@ -25,6 +25,7 @@
     <meta charset="UTF-8">
     <meta modality="viewport" content="width=device-width, initial-scale=1.0">
     <title>View teste</title>
+    <link rel="stylesheet" href="Public/Css/create.css">
 </head>
 <body>
 
