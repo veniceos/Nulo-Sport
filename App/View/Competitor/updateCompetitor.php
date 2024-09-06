@@ -1,3 +1,4 @@
+
 <?php
     require_once 'C:/xampp/htdocs/Nulo-Sport/Config/Config.php';
     require_once '../../Controllers/Competitor.php';
@@ -12,7 +13,16 @@
      $id = $_GET['id'];
      $Competitors = $competitorController->showCompetitorperId($id);
 ?>
-<form method="post" class="form">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Public/Css/update.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" class="form">
     <input required value="<?php echo $Competitors['name']; ?>" type="text" placeholder="Nome" name="update_name">
     <input required value="<?php echo $Competitors['age']; ?>" type="text" placeholder="Idade" name="update_age">
     <input required value="<?php echo $Competitors['height']; ?>" type="text" placeholder="Altura" name="update_height">
@@ -22,3 +32,6 @@
     <input required value="<?php echo $Competitors['team']; ?>" type="text" placeholder="Equipe" name="update_team">
     <button type="submit">Confirmar</button>
 </form>
+
+</body>
+</html>
